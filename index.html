@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+<link rel="stylesheet" href="css/all.min.css">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black py-4">
+  <div class="container">
+
+  
+    <a class="navbar-brand d-flex align-items-center gap-2 p-0 m-0" href="#">
+      <img src="images/logo.png" alt="" class="w-100">
+      <div class="div d-flex flex-column gap-0">
+        <h1 class="h5 m-0 p-0">Weather</h1>
+        <span>Tagline goes here</span>
+      </div>
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto gap-4 ">
+        <a class="nav-link active px-3" aria-current="page" href="#">Home</a>
+        <a class="nav-link px-3" href="#">Features</a>
+        <a class="nav-link px-3" href="#">Pricing</a>
+ 
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ====================search bar strat===================== -->
+
+
+<section class="search  text-center p-2">
+<div class="search-bar position-relative w-50 mx-auto d-flex align-items-center mt-3">
+  <input type="text" class="w-100" placeholder="Search.." id="citySearch">
+  <button type="submit" class="btn btn-primary position-absolute m-0 py-0 px-4">Submit</button>
+</div>
+</section>
+
+<!-- ======================serach bar ends=================================== -->
+
+<!--========================================= forcast strat================================================== -->
+
+<section class="forcast bg-black">
+
+<div class="container">
+<div class="row position-relative">
+
+
+  <!-- ================today card+++++++++++++ -->
+<div class="col-lg-4 today-forcast bg-gradient rounded-start-2 ">
+
+<div class="card-header d-flex border-bottom">
+  <span class="me-auto fs-6 text-light" id="todayName">Wednesdy</span>
+  <span class="ms-auto fs-6 text-light" id="todayNumber">10 Jan</span>
+</div>
+<div class="body text-light mt-2">
+<h4 id="cityName" class="h2">Cairo</h4>
+<div class="div d-flex align-items-center">
+<h2 id="todayTemp" class="me-auto h1">17 C</h2>
+<span id="" class="ms-auto"><img id="todayIcon" src="images/113.webp" alt="" class="w-100"></span>
+</div>
+<span class="text-primary" id="todayCondition">Mist</span>
+</div>
+<div class="card-footer d-flex gap-2 text-body mt-2">
+<img src="images/icon-umberella.png" alt=""><div class="humidty" id="humidty"> 20%</div>
+<img src="images/icon-wind.png" alt=""><div class="wind" id="wind"> 18 Km/hr</div>
+<img src="images/icon-compass.png" alt=""><div class="windDirection" id="windDirection"> East</div>
+</div>
+
+</div>
+
+<!-- ============================today card end ================================-->
+
+
+<!-- ====================================next days card============================ -->
+
+<div class="col-lg-4 nextDay-forcast bg-gradient d-flex flex-column justify-content-between mt-2 mt-lg-0">
+
+<div class="card-header d-flex border-bottom">
+  <span class="mx-auto fs-6 text-light nextdayName" id="">Wednesdy</span>
+</div>
+
+
+<div class="body text-light mt-2 text-center">
+
+<div class="div text-center">
+<img src="images/113.webp" alt="" class="nextdayIcon">
+<h3 id="" class="nextdayMaxTemp h2">17 C</h3>
+<h5 id="" class="nextdayMinTemp h4 text-body">17 C</h5>
+
+</div>
+</div>
+
+
+<span class="text-primary mx-auto nextdayCondition" id="">Mist</span>
+
+</div>
+
+<!-- =================================== -->
+<div class="col-lg-4 nextDay-forcast bg-gradient d-flex flex-column justify-content-between rounded-end-2 mt-2 mt-lg-0">
+
+  <div class="card-header d-flex border-bottom">
+    <span class="mx-auto fs-6 text-light nextdayName" id="">Wednesdy</span>
+  </div>
+  
+  
+  <div class="body text-light mt-2 text-center">
+  
+  <div class="div text-center">
+  <img src="images/113.webp" alt="" class="nextdayIcon">
+  <h3 id="" class="nextdayMaxTemp h2">17 C</h3>
+  <h5 id="" class="nextdayMinTemp h4 text-body">17 C</h5>
+  
+  </div>
+  </div>
+  
+  
+  <span class="text-primary mx-auto nextdayCondition" id="">Mist</span>
+  
+  </div>
+
+
+<!-- ==========================ends============= -->
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+</section>
+
+<!-- ============================forcast ends================================================== -->
+
+
+
+<!-- ==========================footer start================================== -->
+
+<footer class="bg-dark py-1">
+  <div class="container">
+    <div class="serach-footer w-50">
+      <div class="search-bar position-relative mx-auto d-flex align-items-center mt-3">
+        <input type="text" class="w-100" placeholder="Search..">
+        <button type="submit" class="btn btn-primary position-absolute m-0 py-0 px-4">Submit</button>
+      </div>
+      <div class="social">
+        <i></i>
+      </div>
+    </div>
+  </div>
+ 
+</footer>
+
+<!-- ============================footer Ends============================== -->
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
